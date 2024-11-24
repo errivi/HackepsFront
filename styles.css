@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+body.dark-mode .container {
+    background: #444;
+}
+
+h1 {
+    text-align: center;
+    color: inherit;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.theme-toggle:hover {
+    background-color: #0056b3;
+}
+
+.titles-display {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    border-radius: 8px;
+    max-height: 300px;
+    overflow-y: auto;
+    transition: background-color 0.3s;
+}
+
+body.dark-mode .titles-display {
+    background-color: #444;
+    border-color: #666;
+}
+
+.title-item {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+body.dark-mode .title-item {
+    color: #ddd;
+    border-bottom: 1px solid #666;
+}
+
+.title-item:last-child {
+    border-bottom: none;
+}
+
+.title-item:hover {
+    background-color: #e0e0e0;
+}
+
+body.dark-mode .title-item:hover {
+    background-color: #666;
+}
